@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <script>
+
+        var str = prompt('Введите число: ', '123456');
+        if (isNaN(str)) {// Проверка введеного значения значения
+            alert('Вы указали неверное значение!');
+            exit;
+        }
+
+        var arr = str.split('');
+        for (var i = 0; i <= arr.length; i++) {
+            if (arr[i] == undefined) exit;
+            document.write(arr[i] + '<br>');
+        }
+
+    </script>
+
+</body>
+
+</html>
